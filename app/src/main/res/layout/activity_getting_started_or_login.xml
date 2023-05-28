@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".Startup.Getting_started_or_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:id="@+id/codigoLOGO"
+                android:layout_width="0dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/codigo_logo"
+                android:contentDescription="@string/codigo_logo"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/riseuplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rise_up_bar"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="30dp"
+                android:paddingTop="30dp"
+                android:text="@string/welcome"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp"
+                android:text="@string/welcome_text"
+                android:textColor="@color/white"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/grouped_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="500"
+                    android:background="@drawable/btn_login"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/btn_login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:backgroundTint="@color/black"
+                    style="?android:attr/buttonBarButtonStyle">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_getstarted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="500"
+                    android:background="@drawable/btn_getting_started"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/btn_getstarted"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/white"
+                    style="?android:attr/buttonBarButtonStyle">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

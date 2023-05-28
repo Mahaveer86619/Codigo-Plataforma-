@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CodigoPlataforma"
         tools:targetApi="31">
         <activity
+            android:name=".Startup.Getting_started_or_login"
+            android:exported="false" />
+        <activity
             android:name=".Startup.Splash_Screen"
             android:exported="true">
             <intent-filter>
@@ -21,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
