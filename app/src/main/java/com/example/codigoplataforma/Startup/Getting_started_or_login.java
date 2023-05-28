@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.codigoplataforma.Login_and_Signup.Login_page;
 import com.example.codigoplataforma.R;
 
 public class Getting_started_or_login extends AppCompatActivity {
@@ -32,7 +33,7 @@ public class Getting_started_or_login extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Getting_started_or_login.this,Splash_Screen.class);
+                Intent i = new Intent(Getting_started_or_login.this, Login_page.class);
                 startActivity(i);
 
             }

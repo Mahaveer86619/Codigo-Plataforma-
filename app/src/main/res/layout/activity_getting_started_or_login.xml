@@ -27,7 +27,7 @@
                 android:layout_height="135dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/codigo_logo"
+                app:srcCompat="@drawable/codigo_plataforma_logo"
                 android:contentDescription="@string/codigo_logo"
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp">

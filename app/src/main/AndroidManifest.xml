@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CodigoPlataforma"
         tools:targetApi="31">
         <activity
+            android:name=".Login_and_Signup.Signup_page"
+            android:exported="false" />
+        <activity
+            android:name=".Login_and_Signup.Login_page"
+            android:exported="false" />
+        <activity
             android:name=".Startup.Getting_started_or_login"
             android:exported="false" />
         <activity

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startups.Sign_Up"
+    android:fillViewport="true"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_arrow_back_24"
+                    android:contentDescription="@string/back" >
+
+                </ImageButton>
+                <View
+                    android:id="@+id/view_offset_helper"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+                </View>
+
+                <TextView
+                    android:id="@+id/btn_Login_in_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#00000000"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/log_in"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/signup"
+                    android:textColor="@color/white"
+                    android:textSize="36sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/signup_text"
+                    android:textColor="@color/white"
+                    android:textSize="22sp">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_white_fillup_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            android:layout_weight="4"
+            android:background="@drawable/signupshape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/email"
+                android:textColor="@color/dark_grey">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_enter_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edittextshapes"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/enter_email_id"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                tools:ignore="TextFields"
+                android:autofillHints="Enter your email id">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/password"
+                android:textColor="@color/dark_grey">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_enter_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:autofillHints="Create password"
+                android:background="@drawable/edittextshapes"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/create_password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/confirm_password"
+                android:textColor="@color/dark_grey">
+
+            </TextView>
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/et_reenter_password"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="30dp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_marginRight="30dp"-->
+            <!--                android:autofillHints="Re-enter the password"-->
+            <!--                android:background="@drawable/edittextshapes"-->
+            <!--                android:fontFamily="@font/poppins_light"-->
+            <!--                android:hint="@string/reenter_password"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textColorHint="@color/grey"-->
+            <!--                tools:ignore="TextFields">-->
+
+            <!--            </EditText>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextshape"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="@string/reenter_password"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#707070"
+                    tools:ignore="RtlSymmetry"
+                    android:autofillHints="Password">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/show_pass_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:alpha="0.7"
+                    android:padding="5dp"
+                    android:onClick="ShowHidePass"
+                    android:src="@drawable/closed_eye"
+                    android:contentDescription="presstoshow"
+                    tools:ignore="UsingOnClickInXml">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonlogin"
+                android:drawableEnd="@drawable/login_arrow"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/black">
+
+            </Button>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="1dp"
+                android:background="@color/grey">
+
+            </View>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup_through_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goole_facebook_shape"
+                android:drawableStart="@drawable/google_icon"
+                android:drawableEnd="@drawable/foreward_arrow_black"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/sign_up_with_google"
+                android:textAllCaps="false"
+                android:textColor="@color/black">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup_through_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/goole_facebook_shape"
+                android:drawableStart="@drawable/facebook_icon"
+                android:drawableEnd="@drawable/foreward_arrow_black"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/sign_up_with_facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/black">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
