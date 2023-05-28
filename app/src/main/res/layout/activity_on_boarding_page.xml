@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".startups.On_Boarding_Screen"
+    tools:viewBindingIgnore="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="33dp"
+        android:layout_marginLeft="33dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slide_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="584dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/linked_to_pager_adapter">
+        </androidx.viewpager.widget.ViewPager>
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/dark_grey"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="16dp"
+            app:dotsSpacing="6dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="@color/orange"
+            app:progressMode="false">
+        </com.tbuonomo.viewpagerdotsindicator.DotsIndicator>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/previous"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </Button>
+            <View android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+            </View>
+
+            <TextView
+                android:id="@+id/btn_next_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/next_and_go_to_signup_btn"
+                android:contentDescription="@string/name_is_btn_but_it_is_actually_a_tv"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:paddingStart="34dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:drawableRightCompat="@drawable/foreward_arrow_white">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
