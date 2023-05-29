@@ -50,4 +50,21 @@
     <string name="github">Github</string>
     <string name="settings">Settings</string>
     <string name="web_development">Web development</string>
+    <string name="presstoshow">presstoshow</string>
+    <string name="welcome_to_the_codigo_plataforma">Welcome to the Codigo Plataforma</string>
+    <string name="stats">Stats</string>
+    <string name="events">Events</string>
+    <string name="current_level">Current level</string>
+    <string name="problems_solved"> problems solved</string>
+    <string name="no_of_stars">No. of stars</string>
+    <string name="overall">Overall</string>
+    <string name="problem_solving">Problem solving</string>
+    <string name="aptitude">Aptitude</string>
+    <string name="oops">OOPS</string>
+    <string name="basic_programming">Basic Programming</string>
+    <string name="profile_pic">profile_pic</string>
+    <string name="chat">chat</string>
+    <string name="search">search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

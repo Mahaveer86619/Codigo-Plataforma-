@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CodigoPlataforma"
         tools:targetApi="31">
         <activity
+            android:name=".Dashboard.Landing_Page"
+            android:exported="false" />
+        <activity
             android:name=".Startup.On_boarding_page"
             android:exported="false" />
         <activity

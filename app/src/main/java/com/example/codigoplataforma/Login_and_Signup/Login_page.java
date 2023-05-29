@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.codigoplataforma.Dashboard.Landing_Page;
 import com.example.codigoplataforma.R;
 import com.example.codigoplataforma.Startup.Getting_started_or_login;
 
@@ -45,14 +46,14 @@ public class Login_page extends AppCompatActivity {
         login = findViewById(R.id.loginButton);
 
         login.setOnClickListener(v -> {
-            Intent i = new Intent(Login_page.this, Login_page.class);
+            Intent i = new Intent(Login_page.this, Landing_Page.class);
             i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             startActivity(i);
             finish();
         });
 
         register.setOnClickListener(v -> {
-            Intent i = new Intent(Login_page.this,Login_page.class);
+            Intent i = new Intent(Login_page.this,Signup_page.class);
             i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             startActivity(i);
             finish();
